@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IVXX | HIGH REPUBLIC</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Century Gothic", Century Gothic, Trebuchet MS;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* Background wallpaper */
+      background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url("https://4kwallpapers.com/images/walls/thumbs_3t/460.jpg") center / cover no-repeat;
+    }
+
+    .card {
+  position: relative;
+  width: 360px;
+  border-radius: 22px;
+  padding: 30px 26px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.9);
+  overflow: hidden;
+}
+
+/* Blurred background layer */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("https://4kwallpapers.com/images/walls/thumbs_3t/9059.png") center / cover no-repeat;
+  filter: blur(0px);
+  transform: scale(1.1); /* prevents edge blur cut */
+  z-index: 0;
+}
+
+
+/* Keep content above blur */
+.card > * {
+  position: relative;
+  z-index: 2;
+}
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #E6D463;
+      margin-bottom: 12px;
+    }
+
+    .company {
+      font-size: 1px;
+      letter-spacing: 0.1px;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 9px;
+      font-size: 36px;
+      letter-spacing: 0.5px;
+    }
+
+    .title {
+      margin: 0px 0px;
+      font-size: 20px;
+      color: #FFFFFF;
+    }
+
+    .info {
+      font-size: 15px;
+      margin: 9px 9px;
+      color: #FFFFFF;
+    }
+
+    .buttons {
+      margin-top: 18px;
+    }
+
+    .btn {
+      display: block;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #000000;
+      background: #E6D463;
+      border: 1px solid #E6D463;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #FFFFFF;
+      color: #000000;
+    }
+
+    .socials {
+      margin-top: 22px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .social {
+      flex: 1;
+      padding: 10px 0;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 13px;
+      color: #E6D463;
+      background: #000000;
+      border: 1px solid #333333;
+      transition: all 0.3s ease;
+    }
+
+    .social:hover {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .logo {
+      margin-top: 22px;
+    }
+
+    .logo img {
+      width: 70px;
+      opacity: 0.85;
+    }
+
+    footer {
+      margin-top: 2px;
+      font-size: 11px;
+      color: #FFFFFF; 
+    }
+
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <!-- Profile Picture -->
+    <img src="https://i.imgur.com/frEQdnq.jpeg" alt="Profile Picture" class="profile-pic">
+
+    <!-- Name & Title -->
+    <h1>JASPER LING</h1>
+    <div class="title">UNIT MANAGER</div>
+    <div class="title">EXECUTIVE WEALTH PLANNER</div>
+
+    <!-- Contact Info -->
+    <div class="info">📞 +6019-855-0656</div>
+    <div class="info">✉️ sweengiik80@gmail.com</div>
+
+    <!-- Action Buttons -->
+    <div class="buttons">
+      <a class="btn" href="tel:+60198550656">Call</a>
+      <a class="btn" href="mailto:sweengiik80@gmail.com">Email</a>
+      <a class="btn" href="https://wa.me/60198550656">WhatsApp</a>
+    </div>
+
+    <!-- Social Media -->
+    <div class="socials">
+      <a class="social" href="https://instagram.com/swee_ngiik80" target="_blank">Instagram</a>
+      <a class="social" href="https://www.facebook.com/jasper.ling.56/" target="_blank">Facebook</a>
+    </div>
+
+    <!-- Company Logo -->
+    <div class="logo">
+      <img src="https://i.imgur.com/e2s98j1.png" alt="HIGH REPUBLIC Logo">
+    </div>
+
+    <footer>JOURNEY LIFE ASSURANCE</footer>
+    <footer>PRUDENTIAL ASSURANCE SDN BHD</footer>
+  </div>
+
+</body>
+</html>
